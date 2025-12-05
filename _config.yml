@@ -1,0 +1,40 @@
+# _config.yml
+# ------------
+# Global site configuration.
+# Change things like title, description, URL, and collections here.
+
+title: "apurplecaboose"
+description: "Game Development Portfolio & Gaming Media"
+# Replace this with your real GitHub Pages URL when deployed
+# Example for user site: https://apurplecaboose.github.io
+url: "https://your-username.github.io"
+
+# baseurl:
+#   For user sites like username.github.io, keep this "" (empty).
+#   For project sites like username.github.io/my-site, set to "/my-site".
+baseurl: ""
+
+# Collections:
+#   We define a `games` collection to store each game/project as its own file.
+collections:
+  games:
+    output: true
+    permalink: /games/:name/
+
+# Plugins:
+#   For this simple setup we don't strictly need any extra plugins,
+#   but github-pages brings many internally.
+plugins: []
+
+# Markdown processor and highlighter
+markdown: kramdown
+highlighter: rouge
+
+# Defaults:
+#   Useful to apply default front matter to certain file types.
+defaults:
+  - scope:
+      path: ""
+      type: "games"
+    values:
+      layout: "game"
