@@ -1,0 +1,64 @@
+# _data/resume.yml
+# -----------------
+# Structured data for the resume page.
+# The layout `_layouts/resume.html` reads this file and renders it.
+#
+# HOW TO EDIT:
+#   - Change `name` and `title` to your own.
+#   - Update `contacts` with your email, GitHub, itch.io, etc.
+#   - Add/remove sections and items as needed.
+#
+# You can add more sections like "Skills", "Education", "Awards", etc.
+# Just follow the same structure.
+
+name: "Your Name Here"
+title: "Game Developer · Designer · Content Creator"
+
+contacts:
+  # Each item here appears in the header contact list.
+  - label: "Email"
+    value: "you@example.com"
+    url: "mailto:you@example.com"
+
+  - label: "GitHub"
+    value: "github.com/apurplecaboose"
+    url: "https://github.com/apurplecaboose"
+
+  - label: "Itch.io"
+    value: "itch.io/your-profile"
+    url: "https://your-itch-username.itch.io"
+
+sections:
+  - title: "Experience"
+    items:
+      - role: "Game Developer"
+        company: "Indie / Solo Dev"
+        period: "2023 – Present"
+        details:
+          - "Prototyped and shipped multiple small games for web and PC."
+          - "Implemented gameplay, UI, and basic game feel polish."
+          - "Collaborated with artists and composers on small projects."
+
+  - title: "Projects"
+    items:
+      - name: "Sample Game Title"
+        # `link` can point to a game page in the `games` collection
+        # or an external URL.
+        link: "/games/sample-game/"
+        details:
+          - "Short description of this project and what makes it interesting."
+          - "Mention key technologies: Unity, Godot, custom engine, etc."
+          - "Highlight your specific contributions."
+
+  - title: "Skills"
+    items:
+      - name: "Game Development"
+        details:
+          - "Engines: Unity, Godot (adjust to your own stack)."
+          - "Languages: C#, C++, GDScript, etc."
+          - "Experience with gameplay programming and rapid prototyping."
+
+      - name: "General"
+        details:
+          - "Version control: Git & GitHub."
+          - "Basic CI/CD and build pipelines for game exports."
