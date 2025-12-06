@@ -1,0 +1,81 @@
+---
+layout: default
+---
+
+<!--
+Resume layout.
+This layout pulls structured resume data from `_data/resume.yml`.
+
+To edit resume content:
+  - Open `_data/resume.yml`
+  - Change name, title, contacts, and sections there.
+
+If you want to add custom content above or below the structured
+resume, you can edit this file and insert extra HTML.
+-->
+
+{% assign resume = site.data.resume %}
+
+<article class="resume-page">
+  <header class="resume-header">
+    <h1>{{ resume.name }}</h1>
+    <h2 class="resume-title">{{ resume.title }}</h2>
+
+    <ul class="resume-contacts">
+      {% for c in resume.contacts %}
+        <li>
+          <strong>{{ c.label }}:</strong>
+          {% if c.url %}
+            <a href="{{ c.url }}">{{ c.value }}</a>
+          {% else %}
+            {{ c.value }}
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </header>
+
+  {% for section in resume.sections %}
+    <section class="resume-section">
+      <h2>{{ section.title }}</h2>
+
+      {% for item in section.items %}
+        <div class="resume-item">
+          {% if item.role %}
+            <!-- Experience-style item -->
+            <h3 class="resume-item-title">
+              {{ item.role }}
+              {% if item.company %}
+                · {{ item.company }}
+              {% endif %}
+            </h3>
+            {% if item.period %}
+              <p class="resume-period">{{ item.period }}</p>
+            {% endif %}
+
+          {% elsif item.name %}
+            <!-- Project or generic item -->
+            <h3 class="resume-item-title">
+              {% if item.link %}
+                <a href="{{ item.link | relative_url }}">{{ item.name }}</a>
+              {% else %}
+                {{ item.name }}
+              {% endif %}
+            </h3>
+            {% if item.subtitle %}
+              <p class="resume-subtitle">{{ item.subtitle }}</p>
+            {% endif %}
+          {% endif %}
+
+          {% if item.details %}
+            <ul class="resume-details">
+              {% for d in item.details %}
+                <li>{{ d }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </section>
+  {% endfor %}
+</article>
