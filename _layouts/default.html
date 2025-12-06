@@ -1,68 +1,51 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Default layout: wraps all pages that use `layout: default` -->
 
-<!-- Resume layout: pulls data from _data/resume.yml -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% assign resume = site.data.resume %}
+  <title>
+    {% if page.title %}
+      {{ page.title }} | {{ site.title }}
+    {% else %}
+      {{ site.title }}
+    {% endif %}
+  </title>
 
-<article class="resume-page">
-  <header class="resume-header">
-    <h1>{{ resume.name }}</h1>
-    <h2 class="resume-title">{{ resume.title }}</h2>
+  <meta name="description" content="{{ site.description }}">
 
-    <ul class="resume-contacts">
-      {% for c in resume.contacts %}
-        <li>
-          <strong>{{ c.label }}:</strong>
-          {% if c.url %}
-            <a href="{{ c.url }}">{{ c.value }}</a>
-          {% else %}
-            {{ c.value }}
-          {% endif %}
-        </li>
-      {% endfor %}
-    </ul>
+  <!-- Global stylesheet -->
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <!-- Site title/logo -->
+      <a class="site-title" href="{{ '/' | relative_url }}">
+        {{ site.title }}
+      </a>
+
+      <!-- Navigation -->
+      <nav class="site-nav">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/resume/' | relative_url }}">Resume</a>
+        <!-- Add more links later: Games, Timeline, etc. -->
+      </nav>
+    </div>
   </header>
 
-  {% for section in resume.sections %}
-    <section class="resume-section">
-      <h2>{{ section.title }}</h2>
+  <main class="site-main">
+    <!-- PAGE CONTENT RENDERS HERE.
+         For example, the Markdown in index.md, resume.md, etc. -->
+    {{ content }}
+  </main>
 
-      {% for item in section.items %}
-        <div class="resume-item">
-          {% if item.role %}
-            <!-- Experience-style entry -->
-            <h3 class="resume-item-title">
-              {{ item.role }}{% if item.company %} · {{ item.company }}{% endif %}
-            </h3>
-            {% if item.period %}
-              <p class="resume-period">{{ item.period }}</p>
-            {% endif %}
-
-          {% elsif item.name %}
-            <!-- Project or generic entry -->
-            <h3 class="resume-item-title">
-              {% if item.link %}
-                <a href="{{ item.link | relative_url }}">{{ item.name }}</a>
-              {% else %}
-                {{ item.name }}
-              {% endif %}
-            </h3>
-            {% if item.subtitle %}
-              <p class="resume-subtitle">{{ item.subtitle }}</p>
-            {% endif %}
-          {% endif %}
-
-          {% if item.details %}
-            <ul class="resume-details">
-              {% for d in item.details %}
-                <li>{{ d }}</li>
-              {% endfor %}
-            </ul>
-          {% endif %}
-        </div>
-      {% endfor %}
-    </section>
-  {% endfor %}
-</article>
+  <footer class="site-footer">
+    <p>
+      &copy; {{ site.time | date: "%Y" }} {{ site.title }} · Built with Jekyll &amp; GitHub Pages.
+    </p>
+  </footer>
+</body>
+</html>
