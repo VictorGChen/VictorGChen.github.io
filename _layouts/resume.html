@@ -2,17 +2,7 @@
 layout: default
 ---
 
-<!--
-Resume layout.
-This layout pulls structured resume data from `_data/resume.yml`.
-
-To edit resume content:
-  - Open `_data/resume.yml`
-  - Change name, title, contacts, and sections there.
-
-If you want to add custom content above or below the structured
-resume, you can edit this file and insert extra HTML.
--->
+<!-- Resume layout: pulls data from _data/resume.yml -->
 
 {% assign resume = site.data.resume %}
 
@@ -42,19 +32,16 @@ resume, you can edit this file and insert extra HTML.
       {% for item in section.items %}
         <div class="resume-item">
           {% if item.role %}
-            <!-- Experience-style item -->
+            <!-- Experience-style entry -->
             <h3 class="resume-item-title">
-              {{ item.role }}
-              {% if item.company %}
-                · {{ item.company }}
-              {% endif %}
+              {{ item.role }}{% if item.company %} · {{ item.company }}{% endif %}
             </h3>
             {% if item.period %}
               <p class="resume-period">{{ item.period }}</p>
             {% endif %}
 
           {% elsif item.name %}
-            <!-- Project or generic item -->
+            <!-- Project or generic entry -->
             <h3 class="resume-item-title">
               {% if item.link %}
                 <a href="{{ item.link | relative_url }}">{{ item.name }}</a>
