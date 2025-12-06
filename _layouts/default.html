@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+  Default layout.
+  All pages that specify `layout: default` will be wrapped with this.
+
+  Main things to customize:
+    - <title> tag behavior
+    - Global styles and fonts
+    - Navigation links
+  -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    {% if page.title %}
+      {{ page.title }} | {{ site.title }}
+    {% else %}
+      {{ site.title }}
+    {% endif %}
+  </title>
+
+  <meta name="description" content="{{ site.description }}">
+
+  <!-- Basic styling: our custom CSS overrides live in assets/css/custom.css -->
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <!-- Site title/logo -->
+      <a class="site-title" href="{{ '/' | relative_url }}">
+        {{ site.title }}
+      </a>
+
+      <!-- Navigation -->
+      <nav class="site-nav">
+        <!--
+        To add/remove navigation links, edit these <a> tags.
+        hrefs should match the `permalink` or paths of your pages.
+        -->
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/games/' | relative_url }}">Games</a>
+        <a href="{{ '/timeline/' | relative_url }}">Timeline</a>
+        <a href="{{ '/resume/' | relative_url }}">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <!--
+    `{{ content }}` is where the page’s actual content is rendered.
+    For example, the Markdown in index.md, games.md, etc.
+    -->
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <!--
+    Footer text. Customize this to your liking.
+    -->
+    <p>
+      &copy; {{ site.time | date: "%Y" }} {{ site.title }} &middot;
+      Built with Jekyll & GitHub Pages.
+    </p>
+  </footer>
+</body>
+</html>
