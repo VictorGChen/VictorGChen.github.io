@@ -46,9 +46,18 @@ layout: default
                   <p class="project-desc">{{ project.description }}</p>
                 {% endif %}
 
-                {% if project.github %}
-                  <a href="{{ project.github }}" class="project-link" target="_blank">GitHub</a>
-                {% endif %}
+                <div class="project-links">
+                  {% if project.github %}
+                    <a href="{{ project.github }}" class="project-link" target="_blank">
+                      <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                  {% endif %}
+                  {% if project.itch_io %}
+                    <a href="{{ project.itch_io }}" class="project-link" target="_blank">
+                      <i class="fa-brands fa-itch-io"></i> itch.io
+                    </a>
+                  {% endif %}
+                </div>
               </div>
             </div>
           {% endfor %}

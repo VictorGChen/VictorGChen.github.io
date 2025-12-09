@@ -66,7 +66,7 @@
       year: 2023
       description:
         - Implemented oblivious RAM protocols (Path ORAM and rORAM) in C++ for secure storage systems
-        - Benchmarked I/O performance across database sizes (2^14-2^16 blocks); reduced range query overhead by 300×
+        - Benchmarked I/O performance across database sizes (2<sup>14</sup>-2<sup>16</sup> blocks); reduced range query overhead by 300×
         - Collaborated with team through Git/GitHub
 
 - title: Certifications

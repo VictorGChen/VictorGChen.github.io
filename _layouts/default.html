@@ -32,9 +32,16 @@
   </main>
 
   <footer class="site-footer">
-    <p>
-      &copy; {{ site.time | date: "%Y" }} {{ site.title }} · Built with Jekyll &amp; GitHub Pages.
-    </p>
+    <div class="footer-content">
+      <!-- Social Icons -->
+      <div class="footer-social">
+        {% include social.html %}
+      </div>
+
+      <p class="footer-text">
+        &copy; {{ site.time | date: "%Y" }} {{ site.title }} · Built with Jekyll &amp; GitHub Pages.
+      </p>
+    </div>
   </footer>
 </body>
 </html>

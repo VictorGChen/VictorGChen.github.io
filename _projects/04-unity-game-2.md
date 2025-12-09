@@ -5,6 +5,8 @@ description: Interactive Unity WebGL game - Coming Soon
 img:
 importance: 4
 category: featured
+github:
+itch_io:  # Add your itch.io game URL here when ready
 ---
 
 ## Coming Soon
@@ -45,6 +47,7 @@ When ready to add the game, the Unity WebGL build will be embedded using:
 2. Upload the Build folder to `assets/unity/game2/`
 3. Update this page with the embed code
 4. Add a thumbnail image to the `img:` field in the front matter
+5. Add your itch.io game URL to the `itch_io:` field in the front matter
 
 ---
 

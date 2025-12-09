@@ -1,6 +1,6 @@
 ---
 layout: projects
-title: projects
+title: Projects
 permalink: /
 description: My portfolio of projects
 nav: true

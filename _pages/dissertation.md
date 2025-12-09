@@ -1,6 +1,6 @@
 ---
 layout: page
-title: dissertation
+title: Dissertation
 permalink: /dissertation/
 nav: true
 nav_order: 2
