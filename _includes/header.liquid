@@ -1,0 +1,32 @@
+<header class="site-header">
+  <div class="site-header-inner">
+    <!-- Site title/logo -->
+    <a class="site-title" href="{{ '/' | relative_url }}">
+      {{ site.title }}
+    </a>
+
+    <!-- Navigation -->
+    <nav class="site-nav">
+      <ul class="nav-list">
+        <!-- Find and display the home page link -->
+        {% for p in site.pages %}
+          {% if p.permalink == '/' %}
+            <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
+              <a class="nav-link" href="{{ '/' | relative_url }}">{{ p.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+
+        <!-- Other navigation pages sorted by nav_order -->
+        {% assign sorted_pages = site.pages | sort: 'nav_order' %}
+        {% for p in sorted_pages %}
+          {% if p.nav and p.permalink != '/' %}
+            <li class="nav-item {% if page.url == p.url %}active{% endif %}">
+              <a class="nav-link" href="{{ p.url | relative_url }}">{{ p.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

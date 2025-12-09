@@ -1,0 +1,53 @@
+# Example CV data structure
+# You can customize this file to add your own CV sections
+
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Victor Chen
+    - name: Email
+      value: your.email@example.com
+    - name: Location
+      value: Your City, State
+
+- title: Education
+  type: time_table
+  contents:
+    - title: PhD/Masters/Degree
+      institution: University Name, Location
+      year: 2020 - Present
+      description:
+        - Dissertation topic or research area
+        - Relevant coursework or achievements
+    - title: Bachelor's Degree
+      institution: University Name, Location
+      year: 2016 - 2020
+      description:
+        - Major and minor
+        - Honors or awards
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Position Title
+      institution: Company/Organization Name
+      year: 2021 - Present
+      description:
+        - Key responsibility or achievement
+        - Another accomplishment
+        - Technologies or skills used
+    - title: Previous Position
+      institution: Previous Company
+      year: 2020 - 2021
+      description:
+        - Description of work
+        - Key projects or contributions
+
+- title: Skills
+  type: list
+  contents:
+    - Programming Languages Python, JavaScript, C++, etc.
+    - Frameworks/Tools - React, Django, Git, Docker, etc.
+    - Research Areas - List your research interests
+    - Other Skills - Any other relevant skills

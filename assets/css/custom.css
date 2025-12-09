@@ -54,9 +54,40 @@ a:hover {
   color: #ffffff;
 }
 
-.site-nav a {
-  margin-left: 1rem;
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav .nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+}
+
+.site-nav .nav-item {
+  margin: 0;
+}
+
+.site-nav .nav-link {
   font-size: 0.95rem;
+  color: #61dafb;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  transition: background 0.2s;
+}
+
+.site-nav .nav-link:hover {
+  background: #252a34;
+  text-decoration: none;
+}
+
+.site-nav .nav-item.active .nav-link {
+  background: #252a34;
+  color: #ffffff;
 }
 
 /* Main content */
@@ -480,6 +511,108 @@ pre {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(97, 218, 251, 0.2);
   text-decoration: none;
+}
+
+/* CV page */
+
+.cv-page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cv-header {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.cv-header h1 {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.cv-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #252a34;
+  border-radius: 0.5rem;
+  color: #61dafb;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.cv-download-btn:hover {
+  background: #2d3340;
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.cv-description {
+  color: #bbbbbb;
+  margin-top: 0.5rem;
+}
+
+.cv-section {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #171a22;
+  border: 1px solid #252a34;
+  border-radius: 0.75rem;
+}
+
+.cv-section h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #252a34;
+  padding-bottom: 0.5rem;
+}
+
+.cv-item {
+  margin-bottom: 1.5rem;
+}
+
+.cv-item:last-child {
+  margin-bottom: 0;
+}
+
+.cv-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.25rem;
+}
+
+.cv-year {
+  color: #bbbbbb;
+  font-size: 0.9rem;
+}
+
+.cv-institution {
+  color: #bbbbbb;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.cv-description-list {
+  margin-top: 0.5rem;
+  margin-left: 1.5rem;
+}
+
+.cv-section dl {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 0.5rem 1rem;
+}
+
+.cv-section dt {
+  color: #bbbbbb;
+  font-weight: normal;
+}
+
+.cv-section dd {
+  margin: 0;
 }
 
 /* Responsive design */

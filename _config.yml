@@ -36,6 +36,15 @@ plugins: []
 markdown: kramdown
 highlighter: rouge
 
+# CRITICAL: Include _pages directory for Jekyll to process
+include: ["_pages"]
+
+# Kramdown configuration
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    css_class: "highlight"
+
 # Defaults:
 #   Useful to apply default front matter to certain file types.
 defaults:

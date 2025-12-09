@@ -23,22 +23,7 @@
   <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
 </head>
 <body>
-  <header class="site-header">
-    <div class="site-header-inner">
-      <!-- Site title/logo -->
-      <a class="site-title" href="{{ '/' | relative_url }}">
-        {{ site.title }}
-      </a>
-
-      <!-- Navigation -->
-      <nav class="site-nav">
-        {% assign sorted_pages = site.pages | where: "nav", true | sort: "nav_order" %}
-        {% for page in sorted_pages %}
-          <a href="{{ page.url | relative_url }}">{{ page.title }}</a>
-        {% endfor %}
-      </nav>
-    </div>
-  </header>
+  {% include header.liquid %}
 
   <main class="site-main">
     <!-- PAGE CONTENT RENDERS HERE.
