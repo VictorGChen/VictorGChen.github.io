@@ -513,13 +513,7 @@ pre {
   margin: 0.2rem 0;
 }
 
-/* Social buttons */
-
-.social-buttons {
-  margin-top: 2rem;
-  padding-top: 2rem;
-  border-top: 1px solid #252a34;
-}
+/* Social icons */
 
 .social-icons {
   display: flex;

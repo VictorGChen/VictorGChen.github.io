@@ -11,11 +11,6 @@ profile:
   image:
   image_circular: false
   more_info:
-
-news: false
-selected_papers: false
-social: true
-latest_posts: false
 ---
 
 Hi, my name is Victor Chen, a bioinformatician interested in the fields of immune response, machine learning, and population genomics. I have experience developing and testing analysis pipelines for both research and industrial use.
