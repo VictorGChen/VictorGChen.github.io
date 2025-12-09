@@ -8,10 +8,6 @@ _site/
 .bundle/
 vendor/
 
-# Resume/CV PDFs (keep private)
-assets/cv.pdf
-*.pdf
-
 # OS files
 .DS_Store
 Thumbs.db

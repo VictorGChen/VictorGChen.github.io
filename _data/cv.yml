@@ -1,53 +1,81 @@
-# Example CV data structure
-# You can customize this file to add your own CV sections
-
 - title: General Information
   type: map
   contents:
     - name: Full Name
       value: Victor Chen
     - name: Email
-      value: your.email@example.com
-    - name: Location
-      value: Your City, State
+      value: victor.g.chen@gmail.com
+    - name: Phone
+      value: (925) 899-5519
+    - name: GitHub
+      value: github.com/VictorGChen
+    - name: LinkedIn
+      value: linkedin.com/in/victor-chen-bioinformatics
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD/Masters/Degree
-      institution: University Name, Location
-      year: 2020 - Present
+    - title: B.S. in Biomolecular Engineering and Bioinformatics
+      institution: University of California, Santa Cruz
+      year: 2021
       description:
-        - Dissertation topic or research area
-        - Relevant coursework or achievements
-    - title: Bachelor's Degree
-      institution: University Name, Location
-      year: 2016 - 2020
-      description:
-        - Major and minor
-        - Honors or awards
+        - Bioinformatics Concentration
+        - Minor in Computer Science
 
 - title: Experience
   type: time_table
   contents:
-    - title: Position Title
-      institution: Company/Organization Name
-      year: 2021 - Present
+    - title: Research Assistant
+      institution: Stanford University, Snyder Lab
+      year: Oct 2025 - Present
       description:
-        - Key responsibility or achievement
-        - Another accomplishment
-        - Technologies or skills used
-    - title: Previous Position
-      institution: Previous Company
-      year: 2020 - 2021
+        - Contributing to beneficial exposome research, analyzing cytokine responses to environmental and lifestyle exposures
+        - Developing Python-based trajectory analysis pipeline for cytokine data using PCA, principal curves, and pseudotime modeling
+        - Implementing unsupervised clustering and dimensionality reduction algorithms (PCA, UMAP) with scikit-learn
+        - Engineering data preprocessing workflows using pandas for multi-dimensional cytokine datasets with 45+ biomarkers
+    - title: Bioinformatics Developer
+      institution: Kelliop Inc.
+      year: Jul 2021 - Present
       description:
-        - Description of work
-        - Key projects or contributions
+        - Contributed to in vitro diagnostic platforms for neonatal care, pharmacogenomics, and oncology using lab-on-chip technologies
+        - Developed DNA analysis algorithms for 2 neonatal ICU and 1 endometrial cancer diagnostic applications; improved multiplexing accuracy by 15%
+        - Represented company at four ADLM conferences; led product demos and technical discussions with 40+ clinicians
+        - Delivered technical demonstrations of DNA sequencing workflows for Lab-On-Chip IVD devices
+
+- title: Projects
+  type: time_table
+  contents:
+    - title: Interactive Cytokine Trajectory Analysis Dashboard
+      year: 2025
+      description:
+        - Built production-quality platform combining Python backend (Flask, pandas, scikit-learn, statsmodels) with JavaScript
+        - Performs bioinformatics analysis for dimensionality reduction (PCA, UMAP), statistical testing, and trajectory modeling
+        - Implemented ComBat batch correction pipeline reducing technical variation by 70-90% across multi-study datasets
+    - title: Allergen Detection ML Pipeline
+      year: 2024
+      description:
+        - Developed allergen detection pipeline using Random Forest Regression to model serum IgE levels from NHANES and ImmPort datasets
+        - Implemented comprehensive data engineering workflows to integrate and clean multi-source clinical datasets
+        - Built classifiers to identify allergenic genes/proteins using genomic data and Bayesian models
+    - title: Encrypted Data Structures for Secure Search
+      year: 2023
+      description:
+        - Implemented oblivious RAM protocols (Path ORAM and rORAM) in C++ for secure storage systems
+        - Benchmarked I/O performance across database sizes (2^14-2^16 blocks); reduced range query overhead by 300×
+        - Collaborated with team through Git/GitHub
+
+- title: Certifications
+  type: time_table
+  contents:
+    - title: AWS Cloud Certified Practitioner
+      institution: Amazon Web Services
+      year: Oct 2025
 
 - title: Skills
   type: list
   contents:
-    - Programming Languages Python, JavaScript, C++, etc.
-    - Frameworks/Tools - React, Django, Git, Docker, etc.
-    - Research Areas - List your research interests
-    - Other Skills - Any other relevant skills
+    - "<strong>Programming & Development:</strong> Python, JavaScript (ES6+, D3.js), C/C++, SQL, Java, Bash, Git/GitHub, Linux/Unix"
+    - "<strong>Machine Learning & Statistics:</strong> PyTorch, Scikit-learn, Pandas, NumPy, Bayesian Statistics, Dimensionality Reduction (PCA, UMAP, t-SNE), Statistical Testing (Mann-Whitney, Kruskal-Wallis, FDR correction)"
+    - "<strong>Bioinformatics:</strong> Genomics, Sequence Analysis, UCSC Genome Browser, BLAST, GTEx, Batch Effect Correction (ComBat), Trajectory Analysis, Pseudotime Modeling"
+    - "<strong>Data Engineering:</strong> Data pipeline development, Multi-study integration, Data normalization, Performance optimization"
+    - "<strong>Professional:</strong> Technical Documentation, Cross-functional Collaboration, English (Fluent), Mandarin Chinese (Fluent)"

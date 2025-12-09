@@ -15,10 +15,10 @@ baseurl: ""
 
 # Social media usernames (remove the ones you don't want to use)
 github_username: VictorGChen
-linkedin_username:  # Add your LinkedIn username
+linkedin_username: victor-chen-bioinformatics
 email:  # Add your email
 cv_url: /assets/cv.pdf  # Path to your CV PDF
-itch_username:  # Add your itch.io username
+itch_username: turniptoss
 
 # Collections:
 #   We define a `projects` collection to store each project as its own file.
