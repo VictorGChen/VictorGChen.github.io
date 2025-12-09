@@ -3,23 +3,29 @@
 # Global site configuration.
 # Change things like title, description, URL, and collections here.
 
-title: "apurplecaboose"
-description: "Game Development Portfolio & Gaming Media"
+title: "Victor Chen"
+description: "Portfolio & Research"
 # Replace this with your real GitHub Pages URL when deployed
-# Example for user site: https://apurplecaboose.github.io
-url: "https://your-username.github.io"
+url: "https://VictorGChen.github.io"
 
 # baseurl:
 #   For user sites like username.github.io, keep this "" (empty).
 #   For project sites like username.github.io/my-site, set to "/my-site".
 baseurl: ""
 
+# Social media usernames (remove the ones you don't want to use)
+github_username: VictorGChen
+linkedin_username:  # Add your LinkedIn username
+email:  # Add your email
+cv_url: /assets/cv.pdf  # Path to your CV PDF
+itch_username:  # Add your itch.io username
+
 # Collections:
-#   We define a `games` collection to store each game/project as its own file.
+#   We define a `projects` collection to store each project as its own file.
 collections:
-  games:
+  projects:
     output: true
-    permalink: /games/:name/
+    permalink: /projects/:name/
 
 # Plugins:
 #   For this simple setup we don't strictly need any extra plugins,
@@ -35,6 +41,11 @@ highlighter: rouge
 defaults:
   - scope:
       path: ""
-      type: "games"
+      type: "projects"
     values:
-      layout: "game"
+      layout: "page"
+  - scope:
+      path: "_pages"
+      type: "pages"
+    values:
+      layout: "page"

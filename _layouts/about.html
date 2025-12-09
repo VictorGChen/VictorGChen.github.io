@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+<div class="about-page">
+  <div class="about-header">
+    {% if page.profile %}
+      {% if page.profile.align == 'right' %}
+        <div class="profile-right">
+          <div class="about-content">
+            {{ content }}
+          </div>
+
+          <div class="profile-info">
+            {% if page.profile.image %}
+              <div class="profile-image {% if page.profile.image_circular %}circular{% endif %}">
+                <img src="{{ page.profile.image | relative_url }}" alt="Profile picture">
+              </div>
+            {% endif %}
+
+            {% if page.profile.more_info %}
+              <div class="more-info">
+                {{ page.profile.more_info }}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      {% else %}
+        <div class="profile-left">
+          <div class="profile-info">
+            {% if page.profile.image %}
+              <div class="profile-image {% if page.profile.image_circular %}circular{% endif %}">
+                <img src="{{ page.profile.image | relative_url }}" alt="Profile picture">
+              </div>
+            {% endif %}
+
+            {% if page.profile.more_info %}
+              <div class="more-info">
+                {{ page.profile.more_info }}
+              </div>
+            {% endif %}
+          </div>
+
+          <div class="about-content">
+            {{ content }}
+          </div>
+        </div>
+      {% endif %}
+    {% else %}
+      <div class="about-content">
+        {{ content }}
+      </div>
+    {% endif %}
+  </div>
+
+  <!-- Social buttons section (only included if social: true) -->
+  {% if page.social %}
+    <div class="social-buttons">
+      {% include social.html %}
+    </div>
+  {% endif %}
+</div>

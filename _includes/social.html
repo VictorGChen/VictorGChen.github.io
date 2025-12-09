@@ -1,0 +1,31 @@
+<div class="social-icons">
+  {% if site.github_username %}
+    <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer" title="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  {% endif %}
+
+  {% if site.linkedin_username %}
+    <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  {% endif %}
+
+  {% if site.email %}
+    <a href="mailto:{{ site.email }}" title="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+  {% endif %}
+
+  {% if site.cv_url %}
+    <a href="{{ site.cv_url | relative_url }}" target="_blank" rel="noopener noreferrer" title="CV">
+      <i class="fas fa-file-pdf"></i>
+    </a>
+  {% endif %}
+
+  {% if site.itch_username %}
+    <a href="https://{{ site.itch_username }}.itch.io" target="_blank" rel="noopener noreferrer" title="itch.io">
+      <i class="fab fa-itch-io"></i>
+    </a>
+  {% endif %}
+</div>
