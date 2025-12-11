@@ -5,28 +5,35 @@
       {{ site.title }}
     </a>
 
-    <!-- Navigation -->
-    <nav class="site-nav">
-      <ul class="nav-list">
-        <!-- Find and display the home page link -->
-        {% for p in site.pages %}
-          {% if p.permalink == '/' %}
-            <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
-              <a class="nav-link" href="{{ '/' | relative_url }}">{{ p.title }}</a>
-            </li>
-          {% endif %}
-        {% endfor %}
+    <div class="nav-wrapper">
+      <!-- Dark/Light Mode Toggle -->
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+        <i class="fa-solid fa-moon" id="themeIcon"></i>
+      </button>
 
-        <!-- Other navigation pages sorted by nav_order -->
-        {% assign sorted_pages = site.pages | sort: 'nav_order' %}
-        {% for p in sorted_pages %}
-          {% if p.nav and p.permalink != '/' %}
-            <li class="nav-item {% if page.url == p.url %}active{% endif %}">
-              <a class="nav-link" href="{{ p.url | relative_url }}">{{ p.title }}</a>
-            </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </nav>
+      <!-- Navigation -->
+      <nav class="site-nav">
+        <ul class="nav-list">
+          <!-- Find and display the home page link -->
+          {% for p in site.pages %}
+            {% if p.permalink == '/' %}
+              <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
+                <a class="nav-link" href="{{ '/' | relative_url }}">{{ p.title }}</a>
+              </li>
+            {% endif %}
+          {% endfor %}
+
+          <!-- Other navigation pages sorted by nav_order -->
+          {% assign sorted_pages = site.pages | sort: 'nav_order' %}
+          {% for p in sorted_pages %}
+            {% if p.nav and p.permalink != '/' %}
+              <li class="nav-item {% if page.url == p.url %}active{% endif %}">
+                <a class="nav-link" href="{{ p.url | relative_url }}">{{ p.title }}</a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
   </div>
 </header>

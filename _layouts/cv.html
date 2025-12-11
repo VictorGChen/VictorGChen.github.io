@@ -4,13 +4,15 @@ layout: default
 
 <div class="cv-page">
   <header class="cv-header">
-    <h1>{{ page.title }}</h1>
+    <div class="cv-header-content">
+      <h1>{{ page.title }}</h1>
 
-    {% if site.cv_url %}
-      <a href="{{ site.cv_url | relative_url }}" class="cv-download-btn" target="_blank" rel="noopener noreferrer">
-        <i class="fa-solid fa-file-pdf"></i> Download PDF
-      </a>
-    {% endif %}
+      {% if site.cv_url %}
+        <a href="{{ site.cv_url | relative_url }}" class="cv-download-btn" target="_blank" rel="noopener noreferrer">
+          <i class="fa-solid fa-file-pdf"></i> Download PDF
+        </a>
+      {% endif %}
+    </div>
 
     {% if page.description %}
       <p class="cv-description">{{ page.description }}</p>

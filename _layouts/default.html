@@ -43,5 +43,38 @@
       </p>
     </div>
   </footer>
+
+  <script>
+    // Theme toggle functionality
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    const body = document.body;
+
+    // Check for saved theme preference or default to dark theme
+    const currentTheme = localStorage.getItem('theme') || 'dark';
+    if (currentTheme === 'light') {
+      body.classList.add('light-theme');
+      themeIcon.classList.remove('fa-moon');
+      themeIcon.classList.add('fa-sun');
+    }
+
+    // Toggle theme on button click
+    themeToggle.addEventListener('click', () => {
+      body.classList.toggle('light-theme');
+
+      // Update icon based on current theme
+      if (body.classList.contains('light-theme')) {
+        themeIcon.classList.remove('fa-moon');
+        themeIcon.classList.add('fa-sun');
+      } else {
+        themeIcon.classList.remove('fa-sun');
+        themeIcon.classList.add('fa-moon');
+      }
+
+      // Save preference
+      const theme = body.classList.contains('light-theme') ? 'light' : 'dark';
+      localStorage.setItem('theme', theme);
+    });
+  </script>
 </body>
 </html>

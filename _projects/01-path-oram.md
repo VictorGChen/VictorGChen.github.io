@@ -3,8 +3,8 @@ layout: page
 title: Path ORAM - Encrypted Data Structures
 description: C++ implementation of Oblivious RAM protocols for secure storage systems, hiding data access patterns from untrusted servers
 img:
-importance: 1
-category: featured
+importance: 3
+category: all
 github: https://github.com/VictorGChen/PathORAM
 ---
 
