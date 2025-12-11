@@ -513,21 +513,17 @@ pre {
 .more-info {
   font-size: 0.9rem;
   color: #bbbbbb;
-  background: #171a22;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: 1px solid #252a34;
 }
 
 .more-info p {
-  margin: 0.5rem 0;
+  margin: 0.75rem 0;
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
 .more-info p:first-child {
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 .more-info strong {
@@ -856,8 +852,6 @@ body.light-theme .cv-download-btn:hover {
 }
 
 body.light-theme .more-info {
-  background: #ffffff;
-  border-color: #e0e0e0;
   color: #2a2a2a;
 }
 
