@@ -852,11 +852,11 @@ body.light-theme .cv-download-btn:hover {
 }
 
 body.light-theme .more-info {
-  color: #2a2a2a;
+  color: #000000;
 }
 
 body.light-theme .more-info strong {
-  color: #1a1a1a;
+  color: #000000;
 }
 
 body.light-theme .more-info a {
