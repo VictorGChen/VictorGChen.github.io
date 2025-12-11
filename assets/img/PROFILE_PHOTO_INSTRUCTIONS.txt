@@ -1,0 +1,16 @@
+Profile Photo Instructions
+=========================
+
+To add your profile photo to the About page:
+
+1. Add your photo to this directory with the name: profile.jpg
+   (Supported formats: .jpg, .png, .gif)
+
+2. Recommended size: 400x400 pixels (square)
+
+3. Optimize the image for web (keep file size under 500KB)
+
+4. The photo will automatically appear on your About page once you commit and push the file
+
+Note: The photo path is already configured in _pages/about.md
+You just need to add the file here!
