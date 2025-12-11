@@ -9,13 +9,13 @@ subtitle:
 profile:
   align: right
   image: /assets/img/profile.jpg  # Add your profile photo here
-  image_circular: false
+  image_circular: true
   more_info: >
     <p><strong>Contact Information</strong></p>
     <p><i class="fa-solid fa-envelope"></i> <a href="mailto:victor.g.chen@gmail.com">victor.g.chen@gmail.com</a></p>
     <p><i class="fa-solid fa-phone"></i> <a href="tel:+19258995519">(925) 899-5519</a></p>
-    <p><i class="fa-brands fa-github"></i> <a href="https://github.com/VictorGChen" target="_blank">GitHub</a></p>
-    <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/victor-chen-bioinformatics/" target="_blank">LinkedIn</a></p>
+    <p><i class="fa-brands fa-github"></i> <a href="https://github.com/VictorGChen" target="_blank">github.com/VictorGChen</a></p>
+    <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/victor-chen-bioinformatics/" target="_blank">linkedin.com/in/victor-chen-bioinformatics</a></p>
 ---
 
 Hi, my name is Victor Chen, a bioinformatician interested in the fields of immune response, machine learning, and population genomics. I have experience developing and testing analysis pipelines for both research and industrial use.
