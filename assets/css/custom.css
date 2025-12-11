@@ -854,3 +854,17 @@ body.light-theme .cv-download-btn:hover {
   background: #0066cc;
   box-shadow: 0 4px 12px rgba(0, 128, 255, 0.3);
 }
+
+body.light-theme .more-info {
+  background: #ffffff;
+  border-color: #e0e0e0;
+  color: #2a2a2a;
+}
+
+body.light-theme .more-info a {
+  color: #0066cc;
+}
+
+body.light-theme .more-info i {
+  color: #0080ff;
+}
