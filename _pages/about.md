@@ -36,3 +36,13 @@ My hobbies involve bouldering, music, reading, and video games.
 - **Music**: Indie pop is my genre of choice - the creative production and emotional depth really resonate with me
 - **Reading**: Fantasy novels transport me to imaginative worlds and offer compelling narratives
 - **Gaming**: I'm passionate about fighting games and love participating in community tournaments, where strategy meets execution
+
+## Research Goals and Challenges
+- **Host Response Research**: Interest in Host Response research for allergenic response patterns, adjuvent treatments, and drug repurposing with machine learning models for personalized treatment.
+- **Model Development**: Interest in building bioinformatics models and platforms for long term treatment and health tracking. Some problems that intersect with this interest include but are not limited to long term host monitoring of nonstatic allergenicity, pathogenisis, cancer development, and treatment effects within individuals. This could be done with multiple levels of OMIC's data, sequencing data, and health data.
+- **Database Homogenization and Missing Fields**: Databases for different goals can't be used together in many cases due to different metadata tags, titles, languages, missing fields, and lack of consistent fields. Interest in discovering better ways of labeling and data generation to deal with either missing dta or incomplete fields. The use of one type of data to predict and validate a hidden, missing, or incomplete field is a particular research goal of mine.
+
+## Additional Activities and Interests
+- **Soccer**: Long time soccer player with experience in club and school programs
+- **Karate**: Black Belt Karate practitioner with 15+ years of activity. Experience with teaching groups and individuals as a previous instructor for Karate and Fitness Place USA.
+- **Instruments**: Amateur saxophone, clarinet, and piano player
