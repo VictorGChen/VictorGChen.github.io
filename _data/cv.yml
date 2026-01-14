@@ -45,6 +45,11 @@
 - title: Projects
   type: time_table
   contents:
+    - title: Human Biomolecular Atlas Project (HuBmAP) Analysis
+      year: 2025
+      description:
+        - Analysis of single-cell spatial and RNA sequencing data for gastrointestinal tract and liver data
+        - Allows for more robust host response tracking with longitudinal data able to be used for pathology, drug development, identification of irregularities, and drug re-purposing analysis at a single-cell level.
     - title: Interactive Cytokine Trajectory Analysis Dashboard
       year: 2025
       description:
