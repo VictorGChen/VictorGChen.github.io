@@ -17,6 +17,7 @@ profile:
     <p><i class="fa-brands fa-github"></i> <a href="https://github.com/VictorGChen" target="_blank">github.com/VictorGChen</a></p>
     <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/victor-chen-bioinformatics/" target="_blank">linkedin.com/in/victor-chen-bioinformatics</a></p>
 ---
+## About Me
 
 Hi, my name is Victor Chen, a bioinformatician interested in the fields of immune response, machine learning, and population genomics. I have experience developing and testing analysis pipelines for both research and industrial use.
 
